@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+<link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <p class="title">CALCULATOR</p>
+  <div class="body-flex">
+<div class="js-calculator-body">
+  <p class="js-calculator-display calc-display"></p>
+
+    <div class="numbers-buttons-grid">
+      <button class="calcButtons" onclick="updateDisplay('7');">7</button>
+      <button class="calcButtons" onclick="updateDisplay('8');">8</button>
+      <button class="calcButtons" onclick="updateDisplay('9');">9</button>
+      <button class="calcButtons" onclick="updateDisplay('*')">*</button>
+      <button class="calcButtons" onclick="updateDisplay('4');">4</button>
+      <button class="calcButtons" onclick="updateDisplay('5');">5</button>
+      <button class="calcButtons" onclick="updateDisplay('6');">6</button>
+      <button class="calcButtons" onclick="updateDisplay('-')">-</button>
+      <button class="calcButtons" onclick="updateDisplay('1');">1</button>
+      <button class="calcButtons" onclick="updateDisplay('2');">2</button>
+      <button class="calcButtons" onclick="updateDisplay('3');">3</button>
+      <button class="calcButtons" onclick="updateDisplay('+')">+</button>
+      <button class="calcButtons" onclick="del();">del</button>
+      <button class="calcButtons" onclick="updateDisplay('0');">0</button>
+      <button class="calcButtons" onclick="updateDisplay('.')">.</button>
+      <button class="calcButtons" onclick="updateDisplay('/')">/</button>
+      <button class="calcButtons" onclick="
+      let result = eval(calculation);
+      document.querySelector('.js-calculator-display').innerHTML = result;
+      calculation=result;">=</button>
+      <button class="calcButtons" class="js-clear" onclick="clearDisplay()">clr</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="calc.js">
+
+</script>
+
+</body>
+</html>
